@@ -71,10 +71,7 @@ const loadEvent = async () => {
 		formData.append("link", document.getElementById("link").value);
 		formData.append("title", document.getElementById("title").value);
 		formData.append("upload_date", todayDate);
-		formData.append(
-			"photographer",
-			document.getElementById("photographer").value
-		);
+		formData.append("photographer",document.getElementById("photographer").value);
 		formData.append("picture", document.getElementById("picture").files[0]);
 
 		const fetchSettings = {
@@ -104,6 +101,13 @@ const loadEvent = async () => {
 				e.target.outerHTML = `Error`;
 				console.dir(error);
 			});
+	
+		const inputs = document.querySelectorAll("#title, #link, #photographer, #picture");
+
+		inputs.forEach(input => {
+			input.value = '';
+		});
+		
 	});
 
 	const addEventListenersToDeleteButtons = () => {
