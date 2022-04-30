@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a {
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /* -------------------- CSS reset vége -------------------- */
+
+body {
+  background: #262626;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+
+.swiper-slide h2 {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  color: #fff;
+  font-size: 30px;
+  z-index: 100
+}
+
+.swiper-slide h3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #fff;
+  font-size: 20px;
+}
+
+.swiper-slide p {
+  position: absolute;
+  max-width: 35%;
+  top: 10%;
+  left: 5%;
+  color: #fff;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  transform: translateX(100%);
+  width: 50%; 
+  height: 80vh;
+  object-fit: cover
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(218, 136, 69, 0.918);
+}
+
+.deleteBtn:hover {
+  color: rgba(218, 136, 69, 0.918);
+  background-color: #fff;
+  border: 2px solid rgba(218, 136, 69, 0.918);
+}
+
+.addNew{
+  background-color: rgba(218, 136, 69, 0.918);
+}
+
+h1 {
+  text-transform: uppercase;
+  color:#fff;
+  padding: 10px;
+  margin-left: 5%;
+  font-size: 15px;
+
+}
+
+#form{
+  margin-left: 5%;
+}
+
+input[type="text"]{
+  height: 20px;
+  background-color: #fff;
+}
+
+input[name="title"]{
+  width: 300px;
+}
+
+input[name="link"]{
+  width: 400px;
+}
+
+input[name="photographer"]{
+  width: 350px;
+}
+
+input[type="file"]{
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+#addBtn{
+  position: relative;
+  width: 140x;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fff;
+}
